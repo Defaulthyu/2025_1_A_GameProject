@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 1420154414}
   - component: {fileID: 1420154413}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,10 +334,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1420154412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a4bf7349dea45641b6a4a5d40acadde, type: 3}
+  m_Script: {fileID: 11500000, guid: d292baf71b4551f44a7eff92ff48d3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameTimer: 3
+  GameTimer: 0
   MonsterGO: {fileID: 1609644958}
 --- !u!4 &1420154414
 Transform:
