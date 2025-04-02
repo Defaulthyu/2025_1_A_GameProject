@@ -49,18 +49,20 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //코인 수집
-        if(other.CompareTag("Coin"))
+        if (other.CompareTag("Coin"))
         {
             coinCount++;
             Destroy(other.gameObject);
             Debug.Log($"코인 수집 : {coinCount} / {totalCoins}");
         }
-        
+
         //목적지 도착시 종료 로그 출력
-        if(other.gameObject.tag == "Door" && coinCount == totalCoins)   //모든 코인을 획득 후에 문으로 가면 게임 종료
+        if (other.gameObject.tag == "Door" && coinCount >= totalCoins)   //모든 코인을 획득 후에 문으로 가면 게임 종료
         {
             Debug.Log("게임 클리어");
             //게임 완료 로직 추가 가능
         }
+
+
     }
 }
