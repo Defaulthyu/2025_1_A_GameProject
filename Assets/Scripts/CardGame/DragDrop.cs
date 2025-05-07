@@ -81,7 +81,7 @@ public class DragDrop : MonoBehaviour
             }
             else
             {
-                gameManager.ArrangeHand();      //
+                gameManager.ArrangeHand();      //이미 손패에 있다면 정렬만 수행
             }
         }
         else if(IsOverArea(gameManager.mergeArea))      //머지 영역 위에 카드를 놓았는지 확인
@@ -143,14 +143,13 @@ public class DragDrop : MonoBehaviour
         {
             if(hit.collider != null && hit.collider.transform == area)      //콜라이더의 게임 오브젝트가 찾고있는 영역인지 확인
             {
-                Debug.Log(area.name + "영역 감지됨");
+                Debug.Log(area.name + " 영역 감지됨");
                 return true;
 
             }
         }
 
         return false;
-
 
     }
 }

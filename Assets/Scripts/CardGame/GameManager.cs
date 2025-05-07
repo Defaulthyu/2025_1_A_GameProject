@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
         if (mergeButton != null)
         {
-            drawButton.onClick.AddListener(OnmergeButtonClicked); // 버튼 클릭 이벤트 등록
+            mergeButton.onClick.AddListener(OnmergeButtonClicked); // 버튼 클릭 이벤트 등록
             mergeButton.interactable = false;                       //처음에는 머지 버튼 비활성화
         }
     }
